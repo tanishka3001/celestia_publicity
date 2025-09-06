@@ -1,0 +1,10 @@
+.glow{
+    text-shadow: 0px 0px 20px white;
+}
+
+.about-us-bg{
+    background-image: url("../assets/bg.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}

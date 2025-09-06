@@ -1,0 +1,49 @@
+import React, { useEffect, useState } from "react";
+
+const TwinklingStars = () => {
+    const [stars, setStars] = useState([]);
+
+    useEffect(() => {
+        const newStars = [];
+        for (let i = 0; i < 200; i++) {
+            newStars.push({
+                id: i,
+                top: Math.random() * 100,
+                left: Math.random() * 100,
+                duration: Math.random() * 10 + 1,
+                size: Math.random() * 8 + 5,
+                rotation: Math.random() * 360
+            });
+        }
+        setStars(newStars);
+    }, []);
+
+    return (
+        <div className=" w-screen h-screen z-10 bg-black top-0 left-0 fixed">
+            {stars.map((star) => (
+                <img
+                    src="/star2.png"
+                    key={star.id}
+                    className="absolute"
+                    style={{
+                        top: `${star.top}vh`,
+                        left: `${star.left}vw`,
+                        width: `${star.size}px`,
+                        height: `${star.size}px`,
+                        transform: `rotate(${star.rotation}deg)`,
+                        animation: `twinkling ${star.duration}s linear infinite`,
+                    }}
+                />
+            ))}
+            <style>{`
+        @keyframes twinkling {
+          0% { opacity: 0; }
+          50% { opacity: 0.60; }
+          100% { opacity: 0; }
+        }
+      `}</style>
+        </div>
+    );
+};
+
+export default TwinklingStars;

@@ -1,16 +1,15 @@
 import React from "react";
 import isteLogo from '../assets/iste.png'
-import bg from '../assets/bg.png'
 import '../style/aboutUs.css'
 
 const AboutUs = () => {
     return(
-        <div className="flex align-center items-center flex-col bg-gray-900 about-us-bg" >
+        <div className="flex align-center items-center flex-col about-us-bg" >
             <div className="flex align-center flex-col items-center text-white">
-                <img className="size-[146px]" src={isteLogo} alt="LOGO"/>
-                <h1 className="font-[Camood] text-[86px] glow">ABOUT ISTE</h1>
+                <img className="size-[180px]" src={isteLogo} alt="LOGO"/>
+                <h1 className="text-[93px] glow font-[camood]">ABOUT ISTE</h1>
             </div>
-            <div className="w-[1135px] font-[Aeonik] text-[26px] mt-[51px] text-white">
+            <div className="mx-[14vw] font-[Aeonik] text-[26px] mt-[51px] text-white">
                 <p>
                     The Indian Society for Technical Education (ISTE) is a prominent
                     advocate for advancing technical education and research in India.
@@ -31,7 +30,7 @@ const AboutUs = () => {
                 </p>
             </div>
             <div className="ml-[56px] self-start">
-                <img className="size-[146px] relative top-[73px]" src={isteLogo} alt="LOGO"/>
+                <img className="size-[210px] relative top-[105px]" src={isteLogo} alt="LOGO"/>
             </div>
         </div>
     )

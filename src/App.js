@@ -2,17 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './index.css';
 import './App.css';
-import Background from './components/Background'
-import Footer from './components/Footer'
+import AboutUs from './components/aboutUs';
 export default function App() {
   return (
-    <>
-      <Footer />
       <Router>
         <Routes>
-          {/*<Route path='/' element={<Footer></Footer>} />*/}
+          <Route path='/' element={<AboutUs />} />
         </Routes>
       </Router>
-    </>
   );
 }

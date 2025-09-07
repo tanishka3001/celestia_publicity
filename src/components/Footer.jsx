@@ -55,7 +55,7 @@ const Footer = () => {
         <a href="https://www.linkedin.com/company/indian-society-for-technical-education/" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
           <FaLinkedin />
         </a>
-        <a href="https://github.com" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
+        <a href="https://github.com/ISTE-VIT" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
           <FaGithub />
         </a>
         <a href="https://youtube.com/@istevitvellore?si=0KLmgfqpkdn-M4GE" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">

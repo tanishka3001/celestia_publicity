@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Camood";
+  src: url("./assets/font/Camood.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("./assets/font/Aeonik-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

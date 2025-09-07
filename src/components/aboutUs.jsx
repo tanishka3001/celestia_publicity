@@ -1,10 +1,12 @@
 import React from "react";
 import isteLogo from '../assets/iste.png'
 import '../style/aboutUs.css'
+import Background from "./bgFooter";
 
 const AboutUs = () => {
     return(
         <div className="flex align-center items-center flex-col about-us-bg" >
+            <Background />
             <div className="flex align-center flex-col items-center text-white">
                 <img className="size-[180px]" src={isteLogo} alt="LOGO"/>
                 <h1 className="text-[93px] glow font-[camood]">ABOUT ISTE</h1>

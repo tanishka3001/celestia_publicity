@@ -20,7 +20,7 @@ const TwinklingStars = () => {
 
     return (
         <div className=" w-screen h-screen -z-10 bg-[linear-gradient(to_bottom,black,black,#0d0d0d,#0d0d0d,#171616,#171616,#171616,#1f1f1f,#1f1f1f)] top-0 left-0 fixed after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-8 
-     after:bg-gradient-to-t after:from-[#eab308] after:to-transparent after:blur-2xl after:opacity-70] ">
+     after:bg-gradient-to-t after:from-[#eab308] after:to-transparent after:blur-2xl after:opacity-70] after:mb-0 ">
             {stars.map((star) => (
                 <img
                     src="/star2.png"

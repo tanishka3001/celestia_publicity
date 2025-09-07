@@ -3,7 +3,8 @@ import { FaInstagram, FaXTwitter, FaLinkedin, FaGithub, FaYoutube } from "react-
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-black text-gray-300 px-20 pt-10">
+    <footer className="w-full bg-black text-gray-300 pt-10">
+      <div className="mt-4 px-6">
       <div className="max-w-7xl mx-auto flex flex-wrap md:flex-row justify-between items-end gap-10">
         
         {/* Left Section */}
@@ -57,10 +58,10 @@ const Footer = () => {
         <a href="https://youtube.com/@istevitvellore?si=0KLmgfqpkdn-M4GE" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
           <FaYoutube />
         </a>
-      </div>
+      </div></div>
       {/* PNG Image at the end */}
 
-    <div className="relative mt-8">  
+    <div className="relative mt-8 px-0">  
     <img
         src="/iste.png"
         alt="Decorative"

@@ -5,8 +5,10 @@ import Background from "./bgFooter";
 
 const AboutUs = () => {
     return(
+        <div>
+        <Background />
         <div className="flex align-center items-center flex-col about-us-bg" >
-            <Background />
+            
             <div className="flex align-center flex-col items-center text-white">
                 <img className="size-[150px]" src={isteLogo} alt="LOGO"/>
                 <h1 className="text-[93px] glow font-[camood]">ABOUT ISTE</h1>
@@ -34,7 +36,7 @@ const AboutUs = () => {
             <div className="ml-[56px] self-start">
                 <img className="size-[180px] relative top-[105px]" src={isteLogo} alt="LOGO"/>
             </div>
-        </div>
+        </div></div>
     )
 };
 

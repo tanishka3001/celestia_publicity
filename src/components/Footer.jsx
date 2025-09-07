@@ -9,7 +9,10 @@ const Footer = () => {
         
         {/* Left Section */}
         <div>
-          <h1 className="text-4xl font-serif text-white <h1 className="text-5xl font-serif style={{ textShadow: "0 0 25px #ffffff, 0 0 50px #ffffff" }}>CELESTIA</h1>
+          <h1 className="text-4xl font-serif text-white <h1 className="text-5xl font-serif style={{
+    textShadow: "0 0 25px #ffffff, 0 0 50px #ffffff",
+    fontFamily: "CinzelDecorative, serif",
+  }}>CELESTIA</h1>
           <p className="text-lg mt-2 text-[#949494]-400">
             Made with <span className="text-[#949494]-500">♥</span> by ISTE
           </p>

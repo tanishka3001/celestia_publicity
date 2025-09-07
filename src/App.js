@@ -10,7 +10,7 @@ export default function App() {
       <Background />
       <Router>
         <Routes>
-          {/* <Route path='/' element={} /> */}
+           {/* <Route path='/' element={} />  */}
         </Routes>
       </Router>
     </>

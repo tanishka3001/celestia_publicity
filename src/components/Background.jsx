@@ -23,6 +23,7 @@ const TwinklingStars = () => {
             {stars.map((star) => (
                 <img
                     src="/star2.png"
+                    alt="star"
                     key={star.id}
                     className="absolute"
                     style={{
@@ -38,6 +39,8 @@ const TwinklingStars = () => {
             <style>{`
         @keyframes twinkling {
           0% { opacity: 0; }
+          20% {opacity: 0.2;}
+          40% {opaciry: 0.3;}
           50% { opacity: 0.60; }
           100% { opacity: 0; }
         }

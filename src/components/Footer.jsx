@@ -3,24 +3,24 @@ import { FaInstagram, FaXTwitter, FaLinkedin, FaGithub, FaYoutube } from "react-
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-black text-gray-300 px-6 py-10">
+    <footer className="w-full bg-black text-gray-300 px-20 pt-10">
       <div className="max-w-7xl mx-auto flex flex-wrap md:flex-row justify-between items-end gap-10">
         
         {/* Left Section */}
         <div>
           <h1 className="text-4xl font-serif text-white <h1 className="text-5xl font-serif style={{ textShadow: "0 0 25px #ffffff, 0 0 50px #ffffff" }}>CELESTIA</h1>
-          <p className="text-lg mt-2 text-gray-400">
-            Made with <span className="text-white-500">♥</span> by ISTE
+          <p className="text-lg mt-2 text-[#949494]-400">
+            Made with <span className="text-[#949494]-500">♥</span> by ISTE
           </p>
         </div>
 
         {/* Right Section */}
-        <div className="text-xl space-y-2 font-[Calibri]-medium text-right">
+        <div className="text-xl space-y-2 font-[Calibri]-medium text-right text-[#949494]">
           <p>VIT University</p>
           <p>Vellore, Tamil Nadu</p>
           <p>India - 632014</p>
 
-          <p className="my-2">
+          <p className="my-2 text-[#949494]">
             <a
               href="mailto:iste@vit.ac.in"
               className="underline hover:text-white"
@@ -29,7 +29,7 @@ const Footer = () => {
             </a>
           </p>
 
-          <p className="font-medium text-white">
+          <p className="font-medium text-[#949494]">
             +91 83289 26213
           </p>
         </div>
@@ -59,11 +59,14 @@ const Footer = () => {
         </a>
       </div>
       {/* PNG Image at the end */}
+
+    <div className="relative mt-8">  
     <img
         src="/iste.png"
         alt="Decorative"
-        className="absolute bottom-0 left-0 w-full h-auto"
+        className="left-0 w-full h-auto"
     />
+    </div>
     </footer>
   );
 };

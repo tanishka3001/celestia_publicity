@@ -12,6 +12,13 @@
 @font-face {
   font-family: "Aeonik";
   src: url("./assets/font/Aeonik-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AeonikTrial";
+  src: url("./assets/font/AeonikTRIAL-Bold.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }

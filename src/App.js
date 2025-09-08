@@ -4,12 +4,12 @@ import './index.css';
 import './App.css';
 import AboutUs from './components/aboutUs';
 import FAQ from './components/faq';
+import Footer from './components/Footer';
 export default function App() {
   return (
       <Router>
         <Routes>
-          <Route path='/' element={<><FAQ /><AboutUs /></>} />
-          <Route path='/faq' element={<FAQ />} />
+          <Route path='/' element={<div><AboutUs /><Footer /></div>} />
         </Routes>
       </Router>
   );

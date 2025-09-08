@@ -9,7 +9,7 @@ export default function App() {
   return (
       <Router>
         <Routes>
-          <Route path='/' element={<div><AboutUs /><Footer /></div>} />
+          <Route path='/' element={<div className='overflow-x-hidden'><FAQ /><AboutUs /><Footer /></div>} />
         </Routes>
       </Router>
   );

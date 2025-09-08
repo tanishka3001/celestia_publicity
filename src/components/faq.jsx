@@ -2,7 +2,7 @@ import { useState } from "react";
 import Celestia from "../assets/Celestia.png";
 import Aurora from "../assets/Aurora.png";
 import DropdownIcon from "../assets/Dropdown.png";
-import Background from "./bgFooter";
+import Background from "./Background";
 
 const faqdata = [
   {
@@ -61,7 +61,7 @@ const FAQ = () => {
             <img
               src={Celestia}
               alt="Celestia logo"
-              className="w-full max-w-[360px] drop-shadow-[0_0_6px_rgba(255,255,255,0.25)]"
+              className="z-10 w-full max-w-[360px] drop-shadow-[0_0_6px_rgba(255,255,255,0.25)]"
             />
           </div>
 
@@ -114,7 +114,7 @@ const FAQ = () => {
       </section>
 
       {/* Bottom Aurora Background */}
-      <section className="relative w-screen -mt-16">
+      <section className="z-10 relative w-screen -mt-8">
         <div
           className="relative w-full h-[520px] bg-cover bg-center bg-no-repeat z-[-1] pointer-events-none"
           style={{

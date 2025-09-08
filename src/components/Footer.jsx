@@ -3,7 +3,7 @@ import { FaInstagram, FaXTwitter, FaLinkedin, FaGithub, FaYoutube } from "react-
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-black text-gray-300 pt-10">
+    <footer className="w-full bg-black text-gray-300 pt-10 overflow-x-hidden">
       <div className="mt-4 px-6">
       <div className="max-w-7xl mx-auto flex flex-wrap md:flex-row justify-between items-end gap-10">
         

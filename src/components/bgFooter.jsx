@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const TwinklingStars = () => {
   const [stars, setStars] = useState([]);
-const [glowColor, setGlowColor] = useState("#9b5de5");
+// const [glowColor, setGlowColor] = useState("#9b5de5");
 
   useEffect(() => {
     const newStars = [];
@@ -17,21 +17,21 @@ const [glowColor, setGlowColor] = useState("#9b5de5");
       });
     }
     setStars(newStars);
-     const handleScroll = () => {
-      const scrollTop = window.scrollY;
+//      const handleScroll = () => {
+//       const scrollTop = window.scrollY;
 
-if(scrollTop<200)
-  setGlowColor("#9b5de5"); 
-else if (scrollTop >= 200 && scrollTop < 250) {
-  setGlowColor("#c084fc"); 
-}
-else if (scrollTop < 400) {
-  setGlowColor("#eab308"); 
-} 
-    };
+// if(scrollTop<200)
+//   setGlowColor("#9b5de5"); 
+// else if (scrollTop >= 200 && scrollTop < 250) {
+//   setGlowColor("#c084fc"); 
+// }
+// else if (scrollTop < 400) {
+//   setGlowColor("#eab308"); 
+// } 
+//     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+//     window.addEventListener("scroll", handleScroll);
+//     return () => window.removeEventListener("scroll", handleScroll);
 
 
   }, []);
@@ -40,7 +40,7 @@ else if (scrollTop < 400) {
    return (
     <div>
       <div
-        className="fixed top-0 left-0 w-screen h-screen -z-20
+        className="absolute inset-0 top-0 left-0 w-full h-full -z-20
                    bg-[linear-gradient(to_bottom,black,black,#0d0d0d,#0d0d0d,#171616,#171616,#171616,#1f1f1f,#1f1f1f)]"
       >
         {stars.map((star) => (
@@ -61,10 +61,9 @@ else if (scrollTop < 400) {
         ))}
       </div>
       <div
-        className="fixed bottom-0 left-0 w-full h-20 -z-10 blur-3xl opacity-80 transition-colors duration-200"
+        className="absolute bottom-0 left-0 w-full h-40 -z-10 blur-3xl opacity-80 transition-colors duration-200"
         style={{
-          background: `linear-gradient(to top, ${glowColor}, transparent)`,
-            height: glowColor === "#eab308" ? "160px" : "80px"
+          background: `linear-gradient(to top, #eab308, transparent)`,
         }}
       ></div>
 

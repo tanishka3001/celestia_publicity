@@ -5,15 +5,15 @@ import Background from "./bgFooter";
 
 const AboutUs = () => {
     return(
-        <div className="relative w-full h-full -mt-36">
+        <div className="relative w-full h-full -mt-20 md:-mt-36">
         <Background />
         <div className="relative z-10 flex align-center items-center flex-col about-us-bg " >
             
             <div className="flex align-center flex-col items-center text-white">
-                <img className="size-[150px]" src={isteLogo} alt="LOGO"/>
-                <h1 className="text-[93px] glow font-[camood]">ABOUT ISTE</h1>
+                <img className="w-[96px] h-[96px] md:w-[150px] md:h-[150px]" src={isteLogo} alt="LOGO"/>
+                <h1 className="text-4xl md:text-[93px] glow font-[camood]">ABOUT ISTE</h1>
             </div>
-            <div className="mx-[14vw] font-[Aeonik] text-[26px] mt-[51px] text-white">
+            <div className="mx-6 md:mx-[14vw] font-[Aeonik] text-base md:text-[26px] mt-6 md:mt-[51px] text-white leading-relaxed md:leading-8">
                 <p>
                     The Indian Society for Technical Education (ISTE) is a prominent
                     advocate for advancing technical education and research in India.
@@ -33,8 +33,8 @@ const AboutUs = () => {
                     students and professionals.
                 </p>
             </div>
-            <div className="ml-[56px] self-start">
-                <img className="size-[180px] relative top-[105px]" src={isteLogo} alt="LOGO"/>
+            <div className="ml-6 md:ml-[56px] self-start">
+                <img className="w-[120px] h-[120px] md:w-[180px] md:h-[180px] relative top-12 md:top-[105px]" src={isteLogo} alt="LOGO"/>
             </div>
         </div></div>
     )

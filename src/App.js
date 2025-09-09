@@ -5,11 +5,12 @@ import './App.css';
 import AboutUs from './components/aboutUs';
 import FAQ from './components/faq';
 import Footer from './components/Footer';
+import Prizes from './components/prizes'; 
 export default function App() {
   return (
       <Router>
         <Routes>
-          <Route path='/' element={<div className='overflow-x-hidden'><FAQ /><AboutUs /><Footer /></div>} />
+          <Route path='/' element={<div className='overflow-x-hidden'><Prizes /><FAQ /><AboutUs /><Footer /></div>} />
         </Routes>
       </Router>
   );

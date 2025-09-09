@@ -49,4 +49,15 @@ const TwinklingStars = () => {
     );
 };
 
-export default TwinklingStars;
+const Background = ({ children }) => {
+    return (
+        <div className="relative">
+            <TwinklingStars />
+            <div className="relative z-10">
+                {children}
+            </div>
+        </div>
+    )
+}
+
+export default Background;

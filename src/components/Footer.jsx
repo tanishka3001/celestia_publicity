@@ -42,22 +42,23 @@ const Footer = () => {
 
       {/* Social Icons */}
       <div className="flex justify-center space-x-6 mt-6">
-        <a href="https://www.instagram.com/iste_vit_vellore?igsh=aG80dnVwbnM5dXd2" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
+         <a href="https://www.instagram.com/iste_vit_vellore?igsh=aG80dnVwbnM5dXd2" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
           <FaInstagram />
         </a>
-        <a href="https://x.com/iste_vitvellore?s=11" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
+        <a href="https://x.com/iste_vitvellore?s=11" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
           <FaXTwitter />
         </a>
-        <a href="https://www.linkedin.com/company/indian-society-for-technical-education/" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
+        <a href="https://www.linkedin.com/company/indian-society-for-technical-education/" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
           <FaLinkedin />
         </a>
-        <a href="https://github.com" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
+        <a href="https://github.com/ISTE-VIT" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
           <FaGithub />
         </a>
-        <a href="https://youtube.com/@istevitvellore?si=0KLmgfqpkdn-M4GE" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
+        <a href="https://youtube.com/@istevitvellore?si=0KLmgfqpkdn-M4GE" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
           <FaYoutube />
         </a>
       </div>
+      
       {/* PNG Image at the end */}
 
     <div className="relative mt-8">  

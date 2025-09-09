@@ -8,7 +8,7 @@ const Prizes = () => {
   return (
     <Background>
       <div className="prizes-container">
-        <h1 className="prizes-title">PRIZES</h1>
+        <h1 className="prizes-title">PRIZeS</h1>
 
         {/* Combined Podium + Orbit Section */}
         <div className="combined-section">

@@ -1,6 +1,6 @@
-const Laptop = ({className}) => {
+const Laptop = ({className, style}) => {
     return (
-    <svg width="740" height="430" viewBox="0 0 740 430" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+    <svg width="740" height="430" viewBox="0 0 740 430" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} style={style}>
 <path d="M653.281 413.493H661.956C664.463 413.493 666.496 411.461 666.496 408.954V407.718C666.496 405.894 665.016 404.415 663.192 404.415V404.415" stroke="#AEECFF" stroke-width="2"/>
 <path d="M87.5444 413.493H78.8695C76.3625 413.493 74.3302 411.461 74.3302 408.954V407.718C74.3302 405.894 75.8092 404.415 77.6337 404.415V404.415" stroke="#AEECFF" stroke-width="2"/>
 <rect x="101.759" y="27.4106" width="535.656" height="356.196" stroke="#AEECFF" stroke-width="2"/>

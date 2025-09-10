@@ -7,27 +7,27 @@ import Background from "./Background";
 const faqdata = [
   {
     id: 1,
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ?",
+    question: "Do I need to know how to code ?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies venenatis odio sed egestas. Cras condimentum orci nec semper varius. Aenean facilisis est tristique, finibus libero sed, congue augue. Quisque quis ante tristique, vehicula turpis.",
+      "Nope! Celestia is beginner-friendly and AI tools will help you build even if you’re new to coding.",
   },
   {
     id: 2,
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ?",
+    question: "Can I join without a team?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies venenatis odio sed egestas. Cras condimentum orci nec semper varius. Aenean facilisis est tristique, finibus libero sed, congue augue. Quisque quis ante tristique, vehicula turpis.",
+      "Absolutely! You can register solo and we’ll help you find teammates at the event.",
   },
   {
     id: 3,
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ?",
+    question: "What will I build in 24 hours?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies venenatis odio sed egestas. Cras condimentum orci nec semper varius. Aenean facilisis est tristique, finibus libero sed, congue augue. Quisque quis ante tristique, vehicula turpis.",
+      "You’ll create innovative solutions in one of six tracks — from EdTech to Healthcare — and pitch your idea to judges.",
   },
   {
     id: 4,
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ?",
+    question: "Is the hackathon free?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies venenatis odio sed egestas. Cras condimentum orci nec semper varius. Aenean facilisis est tristique, finibus libero sed, congue augue. Quisque quis ante tristique, vehicula turpis.",
+      "Yes, participation is completely free! Just bring your laptop and creativity.",
   },
 ];
 

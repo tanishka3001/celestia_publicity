@@ -5,21 +5,26 @@ const Footer = () => {
   return (
     <footer className="w-full bg-black text-gray-300 pt-10 overflow-x-hidden">
       <div className="mt-4 px-6">
-      <div className="max-w-7xl mx-auto flex flex-wrap md:flex-row justify-between items-end gap-10">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end gap-6 md:gap-10">
         
         {/* Left Section */}
         <div>
-          <h1 className="text-4xl font-serif text-white <h1 className="text-5xl font-serif style={{
-    textShadow: "0 0 25px #ffffff, 0 0 50px #ffffff",
-    fontFamily: "CinzelDecorative, serif",
-  }}>CELESTIA</h1>
-          <p className="text-lg mt-2 text-[#949494]-400">
+          <h1
+            className="text-4xl md:text-5xl font-serif text-white"
+            style={{
+              textShadow: "0 0 25px #ffffff, 0 0 50px #ffffff",
+              fontFamily: "CinzelDecorative, serif",
+            }}
+          >
+            CELESTIA
+          </h1>
+          <p className="text-base md:text-lg mt-2 text-[#949494]">
             Made with <span className="text-[#949494]-500">♥</span> by ISTE
           </p>
         </div>
 
         {/* Right Section */}
-        <div className="text-xl space-y-2 font-[Calibri]-medium text-right text-[#949494]">
+        <div className="text-base md:text-xl space-y-2 font-[Calibri]-medium text-right text-[#949494]">
           <p>VIT University</p>
           <p>Vellore, Tamil Nadu</p>
           <p>India - 632014</p>
@@ -46,19 +51,19 @@ const Footer = () => {
 
       {/* Social Icons */}
       <div className="flex justify-center space-x-6 mt-6">
-        <a href="https://www.instagram.com/iste_vit_vellore?igsh=aG80dnVwbnM5dXd2" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
+        <a href="https://www.instagram.com/iste_vit_vellore?igsh=aG80dnVwbnM5dXd2" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-3xl md:text-5xl">
           <FaInstagram />
         </a>
-        <a href="https://x.com/iste_vitvellore?s=11" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
+        <a href="https://x.com/iste_vitvellore?s=11" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-3xl md:text-5xl">
           <FaXTwitter />
         </a>
-        <a href="https://www.linkedin.com/company/indian-society-for-technical-education/" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
+        <a href="https://www.linkedin.com/company/indian-society-for-technical-education/" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-3xl md:text-5xl">
           <FaLinkedin />
         </a>
-        <a href="https://github.com/ISTE-VIT" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
+        <a href="https://github.com/ISTE-VIT" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-3xl md:text-5xl">
           <FaGithub />
         </a>
-        <a href="https://youtube.com/@istevitvellore?si=0KLmgfqpkdn-M4GE" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
+        <a href="https://youtube.com/@istevitvellore?si=0KLmgfqpkdn-M4GE" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-3xl md:text-5xl">
           <FaYoutube />
         </a>
       </div></div>

@@ -5,7 +5,7 @@ import './App.css';
 import AboutUs from './components/aboutUs';
 import FAQ from './components/faq';
 import Footer from './components/Footer';
-import Tracks from './components/tracks';
+//import Tracks from './components/tracks';
 import Prizes from './components/prizes'; 
 import HomePage from './components/Homepage';
 

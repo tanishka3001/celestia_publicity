@@ -1,0 +1,31 @@
+.glow-svg {
+    filter: drop-shadow(0 0 12px #00ffe7) drop-shadow(0 0 24px #00ffe7);
+    transition: filter 0.3s;
+}
+
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.blink {
+  animation: blink 7s infinite; /* 2s = 1s visible + 1s hidden */
+}
+.homepage-bg {
+  position: relative;
+  height: 100vh;
+  background: 
+    /* linear-gradient(to bottom, rgba(0,0,0,0) 80%, black 100%)*/
+    url("../assets/mountains.png") no-repeat bottom / contain;
+}
+
+
+
+/* @font-face {
+  font-family: 'Area Extended';
+  src: url('/fonts/Area-Extended.woff2') format('woff2'),
+       url('/fonts/Area-Extended.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */

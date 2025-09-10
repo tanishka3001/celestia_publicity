@@ -8,9 +8,8 @@ import { ArrowRight } from "lucide-react";
 
 const HomePage = () => {
     return  (
-        <>
-                <div className="flex flex-col items-center justify-center homepage-bg text-center" style={{height:"120vh"}}>
-                <Background/>
+        <Background>
+            <div className="flex flex-col items-center justify-center homepage-bg text-center -mb-[12px]" style={{height:"120vh"}}>
                 <Left className="absolute -left-5 top-40 size-[200px] glow-svg blink"/>
                 <Right className="absolute right-0 top-40 size-[200px] glow-svg blink"/>
                 <Laptop className="absolute left-20 -top-20 size-[200px] glow-svg blink"/>
@@ -44,7 +43,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </Background>
         
     )
 }

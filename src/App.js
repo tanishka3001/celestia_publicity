@@ -8,11 +8,13 @@ import Footer from './components/Footer';
 import Tracks from './components/tracks';
 import Prizes from './components/prizes'; 
 import HomePage from './components/Homepage';
+
+import Background from './components/Background';
 export default function App() {
   return (
       <Router>
         <Routes>
-          <Route path='/' element={<div className='overflow-x-hidden'><Tracks /><Prizes /><HomePage/><FAQ /><AboutUs /><Footer /></div>} />
+          <Route path='/' element={<div className='overflow-x-hidden'><HomePage/><Tracks /><Prizes /><FAQ /><AboutUs /><Footer /></div>} />
         </Routes>
       </Router>
   );

@@ -6,6 +6,7 @@ import hardware from "../assets/tracks/hardware.png";
 import openinnovation from "../assets/tracks/openinnovation.png";
 import edtech from "../assets/tracks/edtech.png";
 import devtools from "../assets/tracks/devtools.png";
+import "../style/tracks.css";
 
 const cards = [
   { src: sdg, alt: "SDG", rotate: -25, translateY: 8, z: 10 },
@@ -21,7 +22,7 @@ const Tracks = () => {
   return (
     <Background>
       <section className="relative w-screen overflow-hidden text-white min-h-screen">
-        <div className="relative z-10 pt-16 md:pt-24 pb-10 md:pb-20 px-6 md:px-8 flex flex-col items-center">
+        <div className="relative z-10 pt-16 md:pt-24 pb-10 md:pb-20 px-6 md:px-8 flex flex-col items-center tracks-bg">
           <h2
             className="text-4xl md:text-6xl font-[Camood] glow text-center"
             style={{ textShadow: "0 0 20px #ffffff" }}

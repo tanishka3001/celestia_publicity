@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <footer className="w-full bg-black text-gray-300 pt-10 overflow-x-hidden">
       <div className="mt-4 px-6">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end gap-6 md:gap-10">
+      <div className="w-full mx-auto flex flex-col justify-between md:flex-row items-end gap-6 md:gap-10">
         
         {/* Left Section */}
-        <div>
+        <div className="text-left">
           <h1
             className="text-4xl md:text-5xl font-serif text-white"
             style={{
@@ -24,7 +24,8 @@ const Footer = () => {
         </div>
 
         {/* Right Section */}
-        <div className="text-base md:text-xl space-y-2 font-[Calibri]-medium text-right text-[#949494]">
+        <div className="text-right">
+        <div className="text-right text-base md:text-xl space-y-2 font-[Calibri]-medium  text-[#949494]">
           <p>VIT University</p>
           <p>Vellore, Tamil Nadu</p>
           <p>India - 632014</p>
@@ -42,6 +43,7 @@ const Footer = () => {
             +91 83289 26213
           </p>
         </div>
+      </div>
       </div>
 
       {/* Glowing Divider */}

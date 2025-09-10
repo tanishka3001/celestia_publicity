@@ -11,7 +11,7 @@ const Prizes = () => {
         <h1 className="prizes-title">PRIZeS</h1>
 
         {/* Combined Podium + Orbit Section */}
-        <div className="combined-section">
+        <div className="combined-section mb-60">
           <img src={podiumImg} alt="Podium" className="podium-image" />
           <img src={orbitImg} alt="Awards Orbit" className="orbit-image" />
         </div>

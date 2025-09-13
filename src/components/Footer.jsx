@@ -16,10 +16,10 @@ const Footer = () => {
             >
               CELESTIA
             </h1>
-            <p className="text-sm md:text-lg mt-2 text-[#949494]">
+            <p className="text-sm md:text-lg mt-2 text-[#B7B6B6]">
              A 24 hour Vibe-coding Hackathon
             </p>
-            <p className="text-sm md:text-lg mt-2 text-[#949494] font-[Aeonik]">
+            <p className="text-sm md:text-lg mt-2 text-[#B7B6B6] font-[Aeonik]">
              By <span className="italic">ISTE-VIT</span>
             </p>
           </div>

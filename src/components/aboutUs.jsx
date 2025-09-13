@@ -10,7 +10,7 @@ const AboutUs = () => {
         <div className="relative z-10 flex align-center items-center flex-col about-us-bg " >
             
             <div className="flex align-center flex-col items-center text-white">
-                <img className="mb-16 w-[96px] h-[96px] md:w-[150px] md:h-[150px] " src={isteLogo} alt="LOGO"/>
+                <img className="mb-6 md:mb-16 w-[96px] h-[96px] md:w-[150px] md:h-[150px] " src={isteLogo} alt="LOGO"/>
                 <h1 className="text-4xl md:text-[93px] glow font-[camood]">ABOUT ISTE</h1>
             </div>
             <div className="mx-6 md:mx-[14vw] font-[Aeonik] text-base md:text-[26px] mt-6 md:mt-[51px] text-white leading-relaxed md:leading-8">

@@ -5,10 +5,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-black text-gray-300 pt-10 overflow-x-hidden">
       <div className="mt-4 px-6">
-        {/* Flex wrapper: LHS & RHS side-by-side */}
-        <div className="max-w-7xl mx-auto flex flex-row justify-between items-end gap-6 md:gap-10 flex-nowrap">
-          
-          {/* Left Section */}
+        <div className="w-full mx-auto flex flex-row justify-between items-end gap-6 md:gap-10 flex-nowrap">
           <div className="flex flex-col justify-end">
             <h1
               className="text-3xl md:text-5xl font-serif text-white"

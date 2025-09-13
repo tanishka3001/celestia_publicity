@@ -3,12 +3,16 @@ import { FaInstagram, FaXTwitter, FaLinkedin, FaGithub, FaYoutube } from "react-
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-black text-gray-300 px-20 pt-10">
+    <footer className="w-full bg-black text-gray-300 pt-10 overflow-x-hidden">
+      <div className="mt-4 px-6">
       <div className="max-w-7xl mx-auto flex flex-wrap md:flex-row justify-between items-end gap-10">
         
         {/* Left Section */}
         <div>
-          <h1 className="text-4xl font-serif text-white <h1 className="text-5xl font-serif style={{ textShadow: "0 0 25px #ffffff, 0 0 50px #ffffff" }}>CELESTIA</h1>
+          <h1 className="text-4xl font-serif text-white <h1 className="text-5xl font-serif style={{
+    textShadow: "0 0 25px #ffffff, 0 0 50px #ffffff",
+    fontFamily: "CinzelDecorative, serif",
+  }}>CELESTIA</h1>
           <p className="text-lg mt-2 text-[#949494]-400">
             Made with <span className="text-[#949494]-500">♥</span> by ISTE
           </p>
@@ -42,7 +46,7 @@ const Footer = () => {
 
       {/* Social Icons */}
       <div className="flex justify-center space-x-6 mt-6">
-         <a href="https://www.instagram.com/iste_vit_vellore?igsh=aG80dnVwbnM5dXd2" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
+        <a href="https://www.instagram.com/iste_vit_vellore?igsh=aG80dnVwbnM5dXd2" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
           <FaInstagram />
         </a>
         <a href="https://x.com/iste_vitvellore?s=11" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
@@ -57,11 +61,10 @@ const Footer = () => {
         <a href="https://youtube.com/@istevitvellore?si=0KLmgfqpkdn-M4GE" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:text-yellow-400 transition text-5xl">
           <FaYoutube />
         </a>
-      </div>
-      
+      </div></div>
       {/* PNG Image at the end */}
 
-    <div className="relative mt-8">  
+    <div className="relative mt-8 px-0">  
     <img
         src="/iste.png"
         alt="Decorative"

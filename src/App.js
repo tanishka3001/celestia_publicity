@@ -2,18 +2,15 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './index.css';
 import './App.css';
-import Background from './components/Background'
-import Footer from './components/Footer'
+import AboutUs from './components/aboutUs';
+import FAQ from './components/faq';
+import Footer from './components/Footer';
 export default function App() {
   return (
-    <>
-      <Background />
-      <Footer />
       <Router>
         <Routes>
-          {/*<Route path='/' element={<Footer></Footer>} />*/}
+          <Route path='/' element={<div className='overflow-x-hidden'><FAQ /><AboutUs /><Footer /></div>} />
         </Routes>
       </Router>
-    </>
   );
 }

@@ -94,13 +94,13 @@ const Footer = () => {
       </div>
 
       {/* PNG Image at the end */}
-      <div className="relative mt-8 px-0">
-        <img
-          src="/iste.png"
-          alt="Decorative"
-          className="left-0 w-full h-auto"
-        />
-      </div>
+    <div className="relative mt-8 px-0 flex justify-center">  
+    <img
+        src="/iste.png"
+        alt="Decorative"
+        className="left-0 w-[20%] h-auto"
+    />
+    </div>
     </footer>
   );
 };

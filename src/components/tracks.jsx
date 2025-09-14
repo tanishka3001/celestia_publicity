@@ -6,6 +6,7 @@ import hardware from "../assets/tracks/hardware.png";
 import openinnovation from "../assets/tracks/openinnovation.png";
 import edtech from "../assets/tracks/edtech.png";
 import devtools from "../assets/tracks/devtools.png";
+import tmountains from "../assets/tmountains.png";
 import "../style/tracks.css";
 
 const cards = [
@@ -67,7 +68,7 @@ const  Tracks = () => {
 
   const toggleUnwrap = () => {
     let start = unwrap;
-    let end = isOpen ? 0 : 5; // if open, close; if closed, open
+    let end = isOpen ? 0 : 5; 
     let duration = 500; // ms
     let startTime = null;
 
@@ -92,11 +93,17 @@ const  Tracks = () => {
 
   return (
     <Background>
-      <section className="relative w-screen overflow-hidden text-white min-h-screen">
-        <div
-          className="relative z-10 pt-16 md:pt-24 pb-10 md:pb-20 px-6 md:px-8 flex flex-col items-center tracks-bg"
-          style={{ paddingTop: "380px" }}
-        >
+        <section className="relative w-screen overflow-hidden text-white min-h-screen">
+          {/* Mountains at the top */}
+          <img 
+            src={tmountains} 
+            alt="mountains" 
+            className="absolute top-0 left-0 w-full h-auto z-20 mountain-glow-tracks" 
+          />
+          <div
+            className="relative z-10 pb-10 md:pb-20 px-6 md:px-8 flex flex-col items-center tracks-bg"
+            style={{ paddingTop: "380px" }}
+          >
           <h2
             className="text-4xl md:text-6xl font-[Camood] glow text-center"
             style={{ textShadow: "0 0 20px #ffffff" }}
@@ -136,8 +143,8 @@ const  Tracks = () => {
               ))}
             </div>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
     </Background>
   );
 }

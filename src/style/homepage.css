@@ -12,14 +12,133 @@
 .blink {
   animation: blink 7s infinite; /* 2s = 1s visible + 1s hidden */
 }
+
+.mountain-glow {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;
+  object-position: bottom;
+  mask: linear-gradient(to top, black 0%, black 70%, transparent 100%);
+  -webkit-mask: linear-gradient(to top, black 0%, black 70%, transparent 100%);
+  z-index: 30;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .glow-svg {
+    filter: drop-shadow(0 0 8px #00ffe7) drop-shadow(0 0 16px #00ffe7);
+  }
+  
+  .variant-bg {
+    max-width: 110%;
+    max-height: 100%;
+  }
+  
+  .celestia-container {
+    overflow: hidden;
+    height: auto;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .glow-svg {
+    filter: drop-shadow(0 0 10px #00ffe7) drop-shadow(0 0 20px #00ffe7);
+  }
+  
+  .variant-bg {
+    max-width: 115%;
+    max-height: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .glow-svg {
+    filter: drop-shadow(0 0 12px #00ffe7) drop-shadow(0 0 24px #00ffe7);
+  }
+  
+  .variant-bg {
+    max-width: 120%;
+    max-height: 100%;
+  }
+}
+
+/* Extra responsive adjustments for very small screens */
+@media (max-width: 480px) {
+  .variant-bg {
+    max-width: 105%;
+  }
+}
+
+/* Extra responsive adjustments for very large screens */
+@media (min-width: 1536px) {
+  .variant-bg {
+    max-width: 125%;
+  }
+}
+
 .homepage-bg {
   position: relative;
   height: 100vh;
-  background: 
-    url("../assets/mountains.png") no-repeat bottom / contain;
+}
+
+.register-button-hover {
+  background-image: url('../assets/Button1.png') !important;
+  background-color: transparent !important;
+  color: #C28F3F !important;
+  text-shadow: none !important;
+  position: relative;
+  z-index: 50;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.register-button-hover:hover {
+  background-image: url('../assets/Button2.png') !important;
+  color: white !important;
 }
 
 
+
+
+
+/* Variant images behind CELESTIA text only */
+@keyframes variant1Fade {
+  0% { opacity: 1; }
+  40% { opacity: 1; }
+  50% { opacity: 0; }
+  90% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes variant2Fade {
+  0% { opacity: 0; }
+  40% { opacity: 0; }
+  50% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.celestia-container {
+  overflow: hidden;
+}
+
+.variant-bg {
+  z-index: 5;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.variant-1 {
+  animation: variant1Fade 4s ease-in-out infinite;
+  filter: brightness(2) contrast(1.5) saturate(0);
+}
+
+.variant-2 {
+  animation: variant2Fade 4s ease-in-out infinite;
+}
 
 /* @font-face {
   font-family: 'Area Extended';

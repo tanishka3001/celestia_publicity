@@ -6,7 +6,6 @@ import hardware from "../assets/tracks/hardware.png";
 import openinnovation from "../assets/tracks/openinnovation.png";
 import edtech from "../assets/tracks/edtech.png";
 import devtools from "../assets/tracks/devtools.png";
-import tmountains from "../assets/tmountains.png";
 import "../style/tracks.css";
 
 const cards = [

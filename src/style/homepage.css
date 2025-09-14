@@ -41,6 +41,14 @@
   }
 }
 
+@media (max-width: 640px) {
+  .mountain-glow {
+    margin-top: -300px; 
+    height: 250px;
+  }
+}
+
+
 @media (min-width: 641px) and (max-width: 1024px) {
   .glow-svg {
     filter: drop-shadow(0 0 10px #00ffe7) drop-shadow(0 0 20px #00ffe7);

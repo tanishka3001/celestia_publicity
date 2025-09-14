@@ -44,7 +44,7 @@ const Background = () => {
       </div>
       
       <div
-        className="absolute bottom-0 left-0 w-full h-96 -z-10 blur-3xl opacity-80 transition-colors duration-200"
+        className="absolute bottom-0 left-0 w-full h-[600px] -z-10 blur-3xl opacity-80 transition-colors duration-200"
         style={{
           background: `linear-gradient(to top, #28184a, transparent)`,
         }}

@@ -98,7 +98,7 @@ const Footer = () => {
     <img
         src="/iste.png"
         alt="Decorative"
-        className="left-0 w-[20%] h-auto"
+        className="left-0 w-full h-auto"
     />
     </div>
     </footer>

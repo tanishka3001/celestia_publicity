@@ -4,7 +4,7 @@ import Left from "./homepageVector/Left"
 import Right from "./homepageVector/Right"
 import "../style/homepage.css";
 import Background from "./homeBg.jsx"
-import mountains from "../assets/hpmountains.png";
+import mountains from "../assets/mountains.png";
 import Variant1 from "../assets/Variant1.png";
 import Variant2 from "../assets/Variant2.png";
 
@@ -14,15 +14,14 @@ const HomePage = () => {
         <div className="relative w-full h-full">
         <Background />
             <div className="overflow-hidden flex flex-col items-center justify-center text-center -mb-[16px] relative min-h-screen px-4 sm:px-6 lg:px-8">
-                <img src={mountains} alt="mountains" className="mountain-glow" />
                 <Right className="absolute right-[-50px] sm:right-[-100px] top-20 sm:top-40 size-[150px] sm:size-[200px] lg:size-[250px] glow-svg blink" style={{transform: "rotate(-180deg)"}}/>
                 <Left className="absolute left-0 top-20 sm:top-40 size-[150px] sm:size-[200px] lg:size-[250px] glow-svg blink"/>
                 <Laptop className="absolute left-10 sm:left-20 lg:left-40 -top-10 sm:-top-20 size-[150px] sm:size-[200px] lg:size-[250px] glow-svg blink" style={{transform: "rotate(-9deg)"}} />
                 <Headset className="absolute right-5 sm:right-10 lg:right-20 -top-10 sm:-top-20 size-[175px] sm:size-[225px] lg:size-[275px] glow-svg blink" style={{transform: "rotate(15deg)"}}/>
 
                 <div className="relative flex flex-col justify-center items-center align w-full max-w-[690px] -mt-10 sm:-mt-20">
-                    <div className="text-white text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-8 w-[120px] sm:w-[150px]">
-                      <section className="italic mb-0" style={{fontFamily: "Area Extended, sans-serif", fontWeight: 300}}>  ISTE-VIT </section>
+                    <div className="text-white text-lg md:mt-12 sm:text-xl lg:text-2xl mb-6 sm:mb-8 w-[120px] sm:w-[150px]">
+                      <section className="italic md:mt-24 mb-0" style={{fontFamily: "Area Extended, sans-serif", fontWeight: 300}}>  ISTE-VIT </section>
                         <span style={{fontFamily: "Area Extended, sans-serif", fontWeight: 700}}>Presents</span>
                     </div>
                     <div>
@@ -56,10 +55,16 @@ const HomePage = () => {
                         >
                             {/* REGISTER <ArrowRight className="w-6 h-6 sm:w-8 sm:h-8 lg:w-9 lg:h-9 ml-2" strokeWidth={3}/> */}
                         </a>
-                        
+                       
                     </div>
                 </div>
             </div>
+            <div className="w-full p-0 m-0">
+                         <img src={mountains} alt="mountains" className="mountain-glow" />
+                         </div>
+                        <div className="w-full h-24 bg-[linear-gradient(to_bottom,rgb(17,17,17),rgb(17,17,17),rgb(16,16,16),rgb(15,15,15),rgb(14,14,14),rgb(13,13,13),rgb(12,12,12),rgb(12,12,12),rgb(12,12,12),rgb(12,12,12),rgb(6,6,6),rgb(6,6,6),rgb(4,4,4),rgb(0,0,0),rgb(0,0,0))] bg-blend-multiply"></div>
+
+
             </div>
         
     )

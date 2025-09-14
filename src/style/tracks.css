@@ -8,11 +8,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 80vh;
   object-fit: contain;
   object-position: top;
-  mask: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
-  -webkit-mask: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
-  z-index: 20;
+  /* mask: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+  -webkit-mask: linear-gradient(to bottom, black 0%, black 70%, transparent 100%); */
+  z-index: 30;
 }

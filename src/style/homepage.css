@@ -14,11 +14,9 @@
 }
 
 .mountain-glow {
-  position: absolute;
-  bottom: -80px;
-  left: 0;
-  width: 100vw;
-  height: 60vh;
+  margin-top: -40px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   object-position: bottom;
   mask: linear-gradient(to top, black 0%, black 70%, transparent 100%);
@@ -90,7 +88,7 @@
   color: #C28F3F !important;
   text-shadow: none !important;
   position: relative;
-  z-index: 50;
+  z-index: 10;
   pointer-events: auto;
   cursor: pointer;
 }

@@ -95,14 +95,14 @@ const  Tracks = () => {
     <Background>
         <section className="relative w-screen overflow-hidden text-white min-h-screen">
           {/* Mountains at the top */}
-          <img 
+          {/* <img 
             src={tmountains} 
             alt="mountains" 
             className="absolute top-0 left-0 w-full h-auto z-20 mountain-glow-tracks" 
-          />
+          /> */}
           <div
             className="relative z-10 pb-10 md:pb-20 px-6 md:px-8 flex flex-col items-center tracks-bg"
-            style={{ paddingTop: "380px" }}
+            style={{ paddingTop: "10px" }}
           >
           <h2
             className="text-4xl md:text-6xl font-[Camood] glow text-center"

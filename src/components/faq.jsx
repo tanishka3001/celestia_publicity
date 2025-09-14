@@ -53,7 +53,7 @@ const FAQ = () => {
             QUESTIONS
           </h1>
 
-          <div className="flex flex-col md:flex-row items-start justify-between gap-8 md:gap-0">
+          <div className="flex flex-col md:flex-row items-start justify-center gap-8 md:gap-[20%]">
             
             <div className="hidden md:flex w-[320px] md:w-[360px] justify-center md:ml-20"> 
               <img
@@ -64,17 +64,17 @@ const FAQ = () => {
             </div>
 
             {/* FAQ Section */}
-            <div className="flex-1 flex flex-col gap-5 md:gap-6 max-w-full md:max-w-[720px] w-full md:ml-12">
+            <div className="flex-1 flex flex-col gap-5 max-w-full md:max-w-[600px] w-full md:ml-12">
               {faqdata.map((faq) => {
                 const isOpen = openIds.includes(faq.id);
                 return (
-                  <div key={faq.id} className="w-full pb-4 md:pb-5">
+                  <div key={faq.id} className="w-full">
                     <button
                       onClick={() => handleClick(faq.id)}
-                      className="relative bg-[#b87b22] hover:bg-[#c6892d] transition-colors w-full h-14 md:h-[56px] rounded-md px-3 md:px-4 text-left font-[Aeonik] flex items-center justify-between"
+                      className="relative bg-[#b87b22] hover:bg-[#c6892d] transition-colors w-full h-14 rounded-md px-4 text-left flex items-center justify-between"
                     >
                       <span
-                        className="text-base md:text-xl text-white tracking-wide drop-shadow-[0_0_6px_rgba(255,255,255,0.7)]"
+                        className="text-lg text-white font-bold drop-shadow-[0_0_6px_rgba(255,255,255,0.7)]"
                         style={{
                           fontFamily: "AeonikTrial, Aeonik, sans-serif",
                           fontWeight: "bold",
@@ -85,16 +85,16 @@ const FAQ = () => {
                       <img
                         src={DropdownIcon}
                         alt="toggle"
-                        className={`h-4 w-4 md:h-5 md:w-5 transition-transform ${
+                        className={`h-4 w-4 transition-transform ${
                           isOpen ? "rotate-180" : "rotate-0"
                         }`}
                       />
                     </button>
 
                     {isOpen && (
-                      <div className="w-full min-h-[72px] border-2 border-[#b87b22] rounded-b-md px-3 md:px-4 py-3 bg-black/40">
+                      <div className="w-[98%] mx-auto -mt-1 min-h-[72px] border-2 border-[#b87b22] rounded-md px-4 py-3 bg-black/40 relative -z-10">
                         <p
-                          className="text-sm md:text-base text-gray-300 leading-relaxed"
+                          className="text-base text-gray-300 leading-relaxed"
                           style={{
                             fontFamily: "Aeonik, sans-serif",
                             fontWeight: "normal",

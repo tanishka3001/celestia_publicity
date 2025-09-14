@@ -71,11 +71,11 @@ const Footer = () => {
       </div></div>
       {/* PNG Image at the end */}
 
-    <div className="relative mt-8 px-0">  
+    <div className="relative mt-8 px-0 flex justify-center">  
     <img
         src="/iste.png"
         alt="Decorative"
-        className="left-0 w-full h-auto"
+        className="left-0 w-[20%] h-auto"
     />
     </div>
     </footer>

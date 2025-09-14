@@ -1,5 +1,18 @@
 .tracks-bg {
   background: 
-    linear-gradient(to bottom, rgba(0,0,0,0) 80%, black 100%),
-    url("../assets/inverted_mountains.png") no-repeat top / contain;
+    linear-gradient(to bottom, rgba(0,0,0,0) 80%, black 100%);
+  min-height: 100vh;
+}
+
+.mountain-glow-tracks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: top;
+  mask: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+  -webkit-mask: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+  z-index: 20;
 }

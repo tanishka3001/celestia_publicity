@@ -10,7 +10,7 @@ const AboutUs = () => {
         <div className="relative z-10 flex align-center items-center flex-col about-us-bg " >
             
             <div className="flex align-center flex-col items-center text-white">
-                <img className="mb-16 w-[96px] h-[96px] md:w-[150px] md:h-[150px] " src={isteLogo} alt="LOGO"/>
+                <img className="mb-6 md:mb-16 w-[96px] h-[96px] md:w-[150px] md:h-[150px] " src={isteLogo} alt="LOGO"/>
                 <h1 className="text-4xl md:text-[93px] glow font-[camood]">ABOUT ISTE</h1>
             </div>
             <div className="mx-6 md:mx-[14vw] font-[Aeonik] text-base md:text-[26px] mt-6 md:mt-[51px] text-white leading-relaxed md:leading-8">
@@ -34,7 +34,7 @@ const AboutUs = () => {
                 </p>
             </div>
             <div className="ml-6 md:ml-[56px] self-start">
-                <img className="w-[120px] h-[120px] md:w-[180px] md:h-[180px] relative top-12 md:top-[105px]" src={isteLogo} alt="LOGO"/>
+                <img className="w-[70px] h-[70px] md:w-[180px] md:h-[180px] relative top-9 md:top-[105px] md:mb-10" src={isteLogo} alt="LOGO"/>
             </div>
         </div></div>
     )

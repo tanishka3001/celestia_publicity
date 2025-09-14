@@ -33,8 +33,8 @@ const AboutUs = () => {
                     students and professionals.
                 </p>
             </div>
-            <div className="ml-6 md:ml-[56px] self-start">
-                <img className="w-[70px] h-[70px] md:w-[180px] md:h-[180px] relative top-9 md:top-[105px] md:mb-10" src={isteLogo} alt="LOGO"/>
+            <div className="ml-6 md:ml-[40px] self-start">
+                <img className="w-[70px] h-[70px] md:w-[140px] md:h-[140px] relative top-9 md:top-[105px] md:mb-10" src={isteLogo} alt="LOGO"/>
             </div>
         </div></div>
     )

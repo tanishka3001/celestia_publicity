@@ -41,7 +41,7 @@ const TwinklingStars = () => {
     <div>
       <div
         className="absolute inset-0 top-0 left-0 w-full h-full -z-20
-                   bg-[linear-gradient(to_bottom,black,black,#0d0d0d,#0d0d0d,#171616,#171616,#171616,#1f1f1f,#1f1f1f)]"
+                   bg-[#121012]"
       >
         {stars.map((star) => (
           <img

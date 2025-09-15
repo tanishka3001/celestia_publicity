@@ -19,8 +19,8 @@
   height: auto;
   object-fit: cover;
   object-position: bottom;
-  mask: linear-gradient(to top, black 0%, black 70%, transparent 100%);
-  -webkit-mask: linear-gradient(to top, black 0%, black 70%, transparent 100%);
+  mask: linear-gradient(to top, #141414 0%, #141414 70%);
+  -webkit-mask: linear-gradient(to top, #141414 0%, #141414 70%);
   z-index: 30;
 }
 

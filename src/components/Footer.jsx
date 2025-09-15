@@ -14,7 +14,7 @@ const Footer = () => {
                 fontFamily: "CinzelDecorative, serif",
               }}
             >
-              CELESTIA
+              CELEStiA
             </h1>
             <p className="text-sm md:text-lg mt-2 text-[#B7B6B6]">
              <span className="hidden md:inline">A 24 hour </span>Vibe-coding Hackathon

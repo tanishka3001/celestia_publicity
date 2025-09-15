@@ -3,6 +3,7 @@ import "../style/prizes.css";
 import Background from "./Background";
 import orbitImg from "../assets/prizes/Planet.png";
 import podiumImg from "../assets/prizes/Podium.png";
+import frameImg from "../assets/prizes/Frame 1000001492.png";
 
 const Prizes = () => {
   return (
@@ -11,9 +12,9 @@ const Prizes = () => {
         <h1 className="prizes-title">PRIZeS</h1>
 
         {/* Combined Podium + Orbit Section */}
-        <div className="combined-section mb-60">
-          <img src={podiumImg} alt="Podium" className="podium-image" />
-          <img src={orbitImg} alt="Awards Orbit" className="orbit-image" />
+        <div className="combined-section mb-24 md:mb-36">
+          <img src={frameImg} alt="Podium" className="podium-image  " />
+          {/* <img src={orbitImg} alt="Awards Orbit" className="orbit-image " /> */}
         </div>
       </div>
     </Background>

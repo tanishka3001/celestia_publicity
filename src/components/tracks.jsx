@@ -92,7 +92,7 @@ const  Tracks = () => {
 
   return (
     <Background>
-        <section className="relative w-screen overflow-hidden text-white min-h-screen">
+        <section className="relative w-screen overflow-hidden text-white ">
           {/* Mountains at the top */}
           {/* <img 
             src={tmountains} 
@@ -100,7 +100,7 @@ const  Tracks = () => {
             className="absolute top-0 left-0 w-full h-auto z-20 mountain-glow-tracks" 
           /> */}
           <div
-            className="relative z-10 pb-10 md:pb-20 px-6 md:px-8 flex flex-col items-center tracks-bg"
+            className="relative z-10 mt-4 pb-10 md:pb-20 px-6 md:px-8 flex flex-col items-center tracks-bg"
             style={{ paddingTop: "10px" }}
           >
           <h2
@@ -150,5 +150,3 @@ const  Tracks = () => {
 
 
 export default Tracks;
-
-

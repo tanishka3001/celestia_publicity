@@ -46,7 +46,7 @@ const FAQ = () => {
     <Background>
       <div className="relative w-screen text-white overflow-x-hidden">
         {/* FAQ Section */}
-        <section className="relative z-10 w-full pt-12 md:pt-16 pb-8 px-6 md:px-12">
+        <section className="relative z-10 w-full mt-4 pb-8 px-6 md:px-12">
           <h1 className="text-center text-4xl leading-tight md:text-[64px] md:leading-[64px] font-[Camood] glow mb-8 md:mb-12">
             FREQUENTLY ASKED
             <br />

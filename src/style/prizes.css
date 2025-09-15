@@ -1,7 +1,5 @@
 .prizes-container {
   width: 100%;
-  min-height: 100vh;
-  padding: 40px 40px 100px;
   text-align: center;
   color: white;
   display: flex;
@@ -15,32 +13,38 @@
   font-family: "Camood", sans-serif;
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  z-index: 10;
 }
 
 .combined-section {
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column; 
   align-items: center;
+  justify-content: center;
   width: 100%;
+  gap: 0; 
 }
 
 .podium-image {
-  max-width: 50%;
+  width: 60%; 
   height: auto;
-  display: block;
-  position: relative;
-  z-index: 2;
 }
 
 .orbit-image {
-  position: absolute;
-  top: 500px;
-  max-width: 60%;
-  height: auto;
-  z-index: 1;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%; 
+  max-width: 600px; 
+  margin-top: 50px; 
+  
+}
+
+@media (max-width: 768px) {
+  .podium-image {
+    width: 90%;
+  }
+  .orbit-image {
+    max-width: 90%;
+  }
 }

@@ -5,7 +5,7 @@ import Background from "./bgFooter";
 
 const AboutUs = () => {
     return(
-        <div className="relative w-full h-full -mt-20 md:-mt-36">
+        <div className="relative w-full h-full -mt-20 md:-mt-36]">
         <Background />
         <div className="relative z-10 flex align-center items-center flex-col about-us-bg " >
             

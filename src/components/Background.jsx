@@ -19,7 +19,7 @@ const TwinklingStars = () => {
     }, []);
 
     return (
-        <div className="absolute inset-0 w-full h-full -z-10 bg-black top-0 left-0 ">
+        <div className="absolute inset-0 w-full h-full -z-10 bg-[#121012] top-0 left-0 ">
             {stars.map((star) => (
                 <img
                     src="/star2.png"

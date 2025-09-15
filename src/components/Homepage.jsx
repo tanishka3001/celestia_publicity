@@ -62,7 +62,7 @@ const HomePage = () => {
             <div className="w-full p-0 m-0">
                          <img src={mountains} alt="mountains" className="mountain-glow" />
                          </div>
-                        <div className="w-full h-28 bg-[linear-gradient(to_bottom,rgb(17,17,17),rgb(17,17,17),rgb(16,16,16),rgb(15,15,15),rgb(14,14,14),rgb(13,13,13),rgb(12,12,12),rgb(12,12,12),rgb(12,12,12),rgb(12,12,12),rgb(6,6,6),rgb(6,6,6),rgb(6,6,6),rgb(4,4,4),rgb(4,4,4),rgb(4,4,4),rgb(0,0,0),rgb(0,0,0),rgb(0,0,0))] bg-blend-multiply"></div>
+                        {/* <div className="w-full h-28 bg-[linear-gradient(to_bottom,rgb(17,17,17),rgb(17,17,17),#141414,#141414,#141414,#141414,#141414,#141414)] "></div> */}
 
 
             </div>

@@ -42,9 +42,9 @@ const HomePage = () => {
                                 alt="Variant 2" 
                                 className="variant-bg variant-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[110%] sm:w-[115%] lg:w-[120%] h-auto"
                             />
-                            <span className="relative z-10">CELESTIA</span>
+                            <span className="relative z-10">CELEStiA</span>
                         </h1> 
-                        <p className="font-Aeonik text-white text-sm sm:text-base lg:text-lg xl:text-xl px-4 sm:px-0">
+                        <p className="font-[Aeonik] text-white text-sm sm:text-base lg:text-lg xl:text-xl px-4 sm:px-0">
                             Celestia is a 24-hour beginner-friendly vibe coding hackathon where Al tools power creativity and innovation. Working in teams, participants will brainstorm, design, and prototype solutions across six tracks-Dev Tools, Open Innovation, SDG, Hardware, EdTech, and Healthcare. The event offers an exciting chance to gain new skills and transform ideas into impactful, real-world solutions.
                         </p>
                         <a 

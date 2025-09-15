@@ -1,8 +1,6 @@
 import React from "react";
 import "../style/prizes.css";
 import Background from "./Background";
-import orbitImg from "../assets/prizes/Planet.png";
-import podiumImg from "../assets/prizes/Podium.png";
 import frameImg from "../assets/prizes/Frame 1000001492.png";
 
 const Prizes = () => {

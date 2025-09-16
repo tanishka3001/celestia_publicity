@@ -14,7 +14,7 @@ const cards = [
   { src: hardware, alt: "Hardware", rotate: -7, translateY: 3, z: 30 },
   { src: openinnovation, alt: "Open Innovation", rotate: 0, translateY: 0, z:40 },
   { src: edtech, alt: "Edtech", rotate: 8, translateY: 16, z: 45 },
-  { src: devtools, alt: "Dev Tools", rotate: 15, translateY: 50, z: 50 },
+  { src: devtools, alt: "Dev Tools", rotate: 15, translateY: 20, z: 50 },
 ];
 
 
@@ -131,8 +131,10 @@ const  Tracks = () => {
   const spreadFactor = isDesktop ? 3.0 : 1; 
   
   let rotate = c.rotate;
+  let translateY = c.translateY;
   if (c.alt === "Dev Tools") {
-    rotate = unwrap === 0 ? -7 : 15; // flat when closed, tilted when opened
+    rotate = unwrap === 0 ? -7 : 15; 
+    translateY = unwrap === 0 ? 20 : 50;
   }
 
   return (
@@ -143,7 +145,7 @@ const  Tracks = () => {
       className="absolute left-1/2 top-1/2 w-[180px] md:w-[200px] drop-shadow-[0_0_50px_rgba(255,255,255,0.3)]"
       style={{
         transform: `translate(calc(-50% + ${c.rotate * unwrap * spreadFactor}px), 
-                              calc(-50% + ${c.translateY}px)) 
+                              calc(-50% + ${translateY}px)) 
                     rotate(${rotate}deg)`, // <-- use dynamic rotate here
         zIndex: c.z,
       }}

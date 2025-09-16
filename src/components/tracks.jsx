@@ -9,14 +9,16 @@ import devtools from "../assets/tracks/devtools.png";
 import "../style/tracks.css";
 
 const cards = [
-  { src: sdg, alt: "SDG", rotate: -25, translateY: 20, z: 10, translateX: 20 },
-  { src: healthcare, alt: "Healthcare", rotate: -15, translateY: 5, z: 20, translateX: 20},
-  { src: hardware, alt: "Hardware", rotate: -8, translateY: 2, z: 30 , translateX: 20},
-  { src: openinnovation, alt: "Open Innovation", rotate: 0, translateY: 0, z: 40, translateX: 20 },
-  { src: edtech, alt: "Edtech", rotate: 8, translateY: 2, z: 30,  },
-  { src: devtools, alt: "Dev Tools", rotate: 15, translateY: 5, z: 20 },
-  { src: devtools, alt: "Dev Tools", rotate: 25, translateY: 20, z: 10 },
+  { src: sdg, alt: "SDG", rotate: -18, translateY: 45, z: 10 },
+  { src: healthcare, alt: "Healthcare", rotate: -13, translateY: 20, z: 20 },
+  { src: hardware, alt: "Hardware", rotate: -7, translateY: 3, z: 30 },
+  { src: openinnovation, alt: "Open Innovation", rotate: 0, translateY: 0, z:40 },
+  { src: edtech, alt: "Edtech", rotate: 8, translateY: 16, z: 45 },
+  { src: devtools, alt: "Dev Tools", rotate: 15, translateY: 50, z: 50 },
 ];
+
+
+
 
 // const Tracks = () => {
 //   const unwrap = 5;
@@ -124,22 +126,33 @@ const  Tracks = () => {
                     "radial-gradient(ellipse at center, rgba(255,255,255,0.4) 0%, rgba(0,0,0,0) 70%)",
                 }}
               />
-              {cards.map((c, idx) => (
-                <img
-                  key={idx}
-                  src={c.src}
-                  alt={c.alt}
-                  className="absolute left-1/2 top-1/2 w-[180px] md:w-[200px] drop-shadow-[0_0_50px_rgba(255,255,255,0.3)]"
-                  style={{
-                    transform: `translate(calc(-50% + ${
-                      c.rotate * unwrap
-                    }px), calc(-50% + ${c.translateY}px)) rotate(${
-                      c.rotate
-                    }deg)`,
-                    zIndex: c.z,
-                  }}
-                />
-              ))}
+             {cards.map((c, idx) => {
+  const isDesktop = window.innerWidth >= 1024;
+  const spreadFactor = isDesktop ? 3.0 : 1; 
+  
+  let rotate = c.rotate;
+  if (c.alt === "Dev Tools") {
+    rotate = unwrap === 0 ? -7 : 15; // flat when closed, tilted when opened
+  }
+
+  return (
+    <img
+      key={idx}
+      src={c.src}
+      alt={c.alt}
+      className="absolute left-1/2 top-1/2 w-[180px] md:w-[200px] drop-shadow-[0_0_50px_rgba(255,255,255,0.3)]"
+      style={{
+        transform: `translate(calc(-50% + ${c.rotate * unwrap * spreadFactor}px), 
+                              calc(-50% + ${c.translateY}px)) 
+                    rotate(${rotate}deg)`, // <-- use dynamic rotate here
+        zIndex: c.z,
+      }}
+    />
+  );
+})}
+
+
+               
             </div>
           </div>
           </div>

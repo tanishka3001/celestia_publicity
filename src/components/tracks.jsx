@@ -60,47 +60,6 @@ const cards = [
   },
 ];
 
-// const Tracks = () => {
-//   const unwrap = 5;
-//   return (
-//     <Background>
-//       <section className="relative w-screen overflow-hidden text-white min-h-screen">
-//         <div className="relative z-10 pt-16 md:pt-24 pb-10 md:pb-20 px-6 md:px-8 flex flex-col items-center tracks-bg" style={{paddingTop: "380px"}}>
-//           <h2
-//             className="text-4xl md:text-6xl font-[Camood] glow text-center"
-//             style={{ textShadow: "0 0 20px #ffffff" }}
-//           >
-//             TRACKS
-//           </h2>
-
-//           {/* card fan */}
-//           <div className="mt-10 md:mt-16 w-full flex justify-center">
-//             <div className="relative w-[1000px] max-w-full h-[350px] md:h-[420px]">
-//               {/* subtle radial glow under cards */}
-//               <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[1100px] h-[320px] md:h-[390px] rounded-full opacity-60 pointer-events-none"
-//                    style={{
-//                      background: "radial-gradient(ellipse at center, rgba(255,255,255,0.4) 0%, rgba(0,0,0,0) 70%)"
-//                    }}
-//               />
-//               {cards.map((c, idx) => (
-//                 <img
-//                   key={idx}
-//                   src={c.src}
-//                   alt={c.alt}
-//                   className="absolute left-1/2 top-1/2 w-[180px] md:w-[200px] drop-shadow-[0_0_50px_rgba(255,255,255,0.3)]"
-//                   style={{
-//                     transform: `translate(calc(-50% + ${c.rotate*unwrap}px), calc(-50% + ${c.translateY}px)) rotate(${c.rotate}deg)`,
-//                     zIndex: c.z,
-//                   }}
-//                 />
-//               ))}
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-//     </Background>
-//   );
-// };
 
 const Tracks = ({ selectedIdx, setSelectedIdx }) => {
   const [unwrap, setUnwrap] = useState(0);
@@ -120,7 +79,7 @@ const Tracks = ({ selectedIdx, setSelectedIdx }) => {
   const toggleUnwrap = () => {
     let start = unwrap;
     let end = isOpen ? 0 : 5;
-    let duration = 500; // ms
+    let duration = 500; 
     let startTime = null;
 
     cancelAnimationFrame(animRef.current);
@@ -145,12 +104,6 @@ const Tracks = ({ selectedIdx, setSelectedIdx }) => {
   return (
     <Background>
       <section className="relative w-screen overflow-hidden text-white ">
-        {/* Mountains at the top */}
-        {/* <img 
-            src={tmountains} 
-            alt="mountains" 
-            className="absolute top-0 left-0 w-full h-auto z-20 mountain-glow-tracks" 
-          /> */}
         <div
           className="relative z-10 mt-4 pb-10 md:pb-20 px-6 md:px-8 flex flex-col items-center tracks-bg"
           style={{ paddingTop: "10px" }}
@@ -169,13 +122,13 @@ const Tracks = ({ selectedIdx, setSelectedIdx }) => {
           >
             <div className="relative w-[1000px] max-w-full h-[350px] md:h-[420px]">
               {/* subtle radial glow under cards */}
-              <div
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[1100px] h-[320px] md:h-[390px] rounded-full opacity-60 pointer-events-none"
-                style={{
-                  background:
-                    "radial-gradient(ellipse at center, rgba(255,255,255,0.4) 0%, rgba(0,0,0,0) 70%)",
-                }}
-              />
+             <div
+  className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[1100px] h-[320px] md:h-[390px] opacity-60 pointer-events-none rounded-full overflow-hidden"
+  style={{
+    background:
+      "radial-gradient(ellipse at center, rgba(255,255,255,0.4) 0%, rgba(0,0,0,0) 70%)",
+  }}
+/>
               { cards.map((c, idx) => {
                 const isDesktop = window.innerWidth >= 1024;
                 const spreadFactor = isDesktop ? 3.0 : 1;

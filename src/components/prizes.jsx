@@ -3,10 +3,11 @@ import "../style/prizes.css";
 import Background from "./Background";
 import frameImg from "../assets/prizes/Frame 1000001492.png";
 
-const Prizes = () => {
+const Prizes = ({ selectedIdx }) => {
+
   return (
     <Background>
-      <div className="prizes-container">
+      <div className={`prizes-container ${selectedIdx !== null ? "blur-lg" : ""}`}>
         <h1 className="prizes-title">PRIZeS</h1>
 
         {/* Combined Podium + Orbit Section */}

@@ -25,9 +25,9 @@ const faqdata = [
   },
   {
     id: 4,
-    question: "Is the hackathon free?",
+    question: "What do I get out of it?",
     answer:
-      "Yes, participation is completely free! Just bring your laptop and creativity.",
+      "Hands-on experience, new skills, amazing teammates, mentorship, and maybe even prizes!",
   },
 ];
 

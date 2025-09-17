@@ -8,7 +8,7 @@ const Prizes = ({ selectedIdx }) => {
   return (
     <Background>
       <div className={`prizes-container ${selectedIdx !== null ? "blur-lg" : ""}`}>
-        <h1 className="prizes-title">PRIZeS</h1>
+        <h1 className="mt-12 prizes-title">PRIZeS</h1>
 
         {/* Combined Podium + Orbit Section */}
         <div className="combined-section mb-24 md:mb-36">

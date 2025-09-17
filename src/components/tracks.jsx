@@ -122,13 +122,28 @@ const Tracks = ({ selectedIdx, setSelectedIdx }) => {
           >
             <div className="relative w-[1000px] max-w-full h-[350px] md:h-[420px]">
               {/* subtle radial glow under cards */}
-             <div
-  className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[1100px] h-[320px] md:h-[390px] opacity-60 pointer-events-none rounded-full overflow-hidden"
+            <div
+  className="absolute md:hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
+             w-[100px] h-[100px] opacity-20 pointer-events-none 
+             rounded-full overflow-hidden"
+  style={{
+    background:
+      "radial-gradient(ellipse at center, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0) 10%)",
+  }}
+/>
+
+{/* Desktop Glow */}
+<div
+  className="absolute hidden md:block left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
+             w-[1100px] h-[390px] opacity-50 pointer-events-none 
+             rounded-full overflow-hidden"
   style={{
     background:
       "radial-gradient(ellipse at center, rgba(255,255,255,0.4) 0%, rgba(0,0,0,0) 70%)",
   }}
 />
+
+
               { cards.map((c, idx) => {
                 const isDesktop = window.innerWidth >= 1024;
                 const spreadFactor = isDesktop ? 3.0 : 1;
@@ -150,7 +165,7 @@ const Tracks = ({ selectedIdx, setSelectedIdx }) => {
                     key={idx}
                     src={c.src}
                     alt={c.alt}
-                    className="absolute left-1/2 top-1/2 w-[180px] md:w-[200px] drop-shadow-[0_0_50px_rgba(255,255,255,0.3)]"
+                    className="absolute left-1/2 top-1/2 w-[220px] md:w-[300px] drop-shadow-[0_0_50px_rgba(255,255,255,0.3)]"
                     style={{
                       transform: `translate(calc(-50% + ${
                         c.rotate * unwrap * spreadFactor

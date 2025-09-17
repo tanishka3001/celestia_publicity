@@ -27,7 +27,7 @@ const faqdata = [
     id: 4,
     question: "What do I get out of it?",
     answer:
-      "Hands-on experience, new skills, amazing teammates, mentorship, and maybe even prizes!",
+      "Yes, participation is completely free! Just bring your laptop and creativity.",
   },
 ];
 

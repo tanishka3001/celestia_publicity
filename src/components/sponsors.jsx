@@ -51,7 +51,7 @@ const TwinklingStars = () => {
 
 const Sponsors = () => {
   return (
-    <div className="relative h-auto py-20 md:py-24 flex items-center justify-center overflow-hidden">
+    <div className="relative h-auto py-20 md:py-24  flex items-center justify-center overflow-hidden">
       {/* Twinkling Stars Background */}
       <TwinklingStars />
       
@@ -59,14 +59,14 @@ const Sponsors = () => {
       <img 
         src="/Sponsors.png" 
         alt="Sponsors" 
-        className="hidden md:block w-3/5 h-4/5 object-contain relative z-10 mt-16 scale-110"
+        className="hidden md:block w-3/5 h-4/5 md:mb-16 object-contain relative z-10 mt-16 scale-110"
       />
       
       {/* Sponsors PNG Image - Mobile */}
       <img 
         src="/sponsorsmv.png" 
         alt="Sponsors" 
-        className="block md:hidden w-5/5 h-auto object-contain relative z-10 mx-auto mt-16 scale-110"
+        className="block md:hidden w-[100%] h-auto object-contain relative z-10 mx-auto mt-16 scale-110"
       />
       
       {/* SPONSORS Title with Glow Effect */}

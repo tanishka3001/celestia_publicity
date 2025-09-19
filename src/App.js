@@ -8,13 +8,14 @@ import FAQ from './components/faq';
 import Footer from './components/Footer';
 import Tracks from './components/tracks';
 import Prizes from './components/prizes';
+import Sponsors from './components/sponsors';
 import HomePage from './components/Homepage';
 export default function App() {
   const [selectedIdx, setSelectedIdx] = useState(null);
   return (
       <Router>
         <Routes>
-          <Route path='/' element={<div className='overflow-x-hidden'><HomePage /> <Tracks selectedIdx={selectedIdx} setSelectedIdx={setSelectedIdx} /><Prizes selectedIdx={selectedIdx} /><FAQ /><AboutUs /><Footer /></div>} />
+          <Route path='/' element={<div className='overflow-x-hidden'><HomePage /> <Tracks selectedIdx={selectedIdx} setSelectedIdx={setSelectedIdx} /><Prizes selectedIdx={selectedIdx} /><Sponsors /><FAQ /><AboutUs /><Footer /></div>} />
         </Routes>
       </Router>
   );

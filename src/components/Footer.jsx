@@ -39,7 +39,7 @@ const Footer = () => {
               </a>
             </p>
 
-            <p className="font-medium">+91 83289 26213</p>
+            <p className="font-medium">+91 63623 67135</p>
           </div>
         </div>
 

@@ -48,7 +48,7 @@ const HomePage = () => {
                             Celestia is a 24-hour beginner-friendly vibe coding hackathon where Al tools power creativity and innovation. Working in teams, participants will brainstorm, design, and prototype solutions across six tracks-Dev Tools, Open Innovation, SDG, Hardware, EdTech, and Healthcare. The event offers an exciting chance to gain new skills and transform ideas into impactful, real-world solutions.
                         </p>
                         <a 
-                            href="https://gravitas.vit.ac.in/events/2589c075-aa0e-49eb-ad60-e120887373ed" 
+                            href="https://unstop.com/p/celestia-indian-society-for-technical-education-1560805" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="register-button-hover w-full max-w-[400px] sm:max-w-[500px] lg:max-w-[600px] py-6 sm:py-8 lg:py-[37px] text-2xl sm:text-3xl lg:text-4xl xl:text-[50px] flex items-center justify-center mt-6 sm:mt-8 lg:mt-10 transition-all duration-300 bg-contain bg-no-repeat bg-center text-[#C28F3F] block relative z-50 cursor-pointer mx-auto"
